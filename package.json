@@ -1,0 +1,50 @@
+{
+  "name": "next-assets-manifest",
+  "version": "0.1.0",
+  "description": "Add webpack-assets-manifest to your Next.js project",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": {
+    "email": "eric@webdeveric.com",
+    "name": "Eric King",
+    "url": "http://webdeveric.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webdeveric/next-assets-manifest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webdeveric/next-assets-manifest/issues"
+  },
+  "homepage": "https://github.com/webdeveric/next-assets-manifest",
+  "keywords": [
+    "next-assets-manifest",
+    "webpack-assets-manifest",
+    "next-plugin",
+    "assets",
+    "manifest",
+    "subresource",
+    "integrity",
+    "sri"
+  ],
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint --fix src __tests__",
+    "test": "jest",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "dependencies": {
+    "webpack-assets-manifest": ">=3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-webdeveric": "^0.3",
+    "eslint-plugin-jest": "^22.3.0",
+    "jest": "^24.1.0"
+  }
+}
