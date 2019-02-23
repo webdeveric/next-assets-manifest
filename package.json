@@ -21,6 +21,7 @@
     "next-assets-manifest",
     "webpack-assets-manifest",
     "next-plugin",
+    "next-plugins",
     "assets",
     "manifest",
     "subresource",
