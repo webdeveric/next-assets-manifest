@@ -13,11 +13,13 @@ npm install next-assets-manifest --save-dev
 
 ## Example Usage
 
-Add to your `next.config.js`.
+View [examples](./examples/).
 
 `assetsManifest`, `assetsManifestClient`, and `assetsManifestServer` are optional.
 
 The values for these options can be found [here](https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema).
+
+Add something like this to your `next.config.js`.
 
 ```js
 const withAssetsManifest = require('next-assets-manifest');
