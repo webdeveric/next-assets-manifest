@@ -29,7 +29,7 @@ test('makeOptionsArray combines objects', () => {
   );
 });
 
-test('makeOptionsArray combines multiple objects ', () => {
+test('makeOptionsArray combines multiple objects', () => {
   const results = makeOptionsArray(
     {
       a: 'a',
