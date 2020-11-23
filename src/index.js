@@ -1,3 +1,5 @@
+'use strict';
+
 const WebpackAssetsManifest = require('webpack-assets-manifest');
 const { makeOptionsArray } = require('./helpers.js');
 
@@ -22,7 +24,7 @@ module.exports = function withAssetsManifest(nextConfig = {}) {
           assetsManifest :
           options.isServer ?
             assetsManifestServer :
-            assetsManifestClient
+            assetsManifestClient,
       );
 
       const plugins = manifestOptions.map(
@@ -32,7 +34,7 @@ module.exports = function withAssetsManifest(nextConfig = {}) {
           nextOptions: {
             ...options,
           },
-        })
+        }),
       );
 
       config.plugins.push( ...plugins );

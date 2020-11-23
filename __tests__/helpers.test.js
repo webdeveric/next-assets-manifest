@@ -1,3 +1,5 @@
+'use strict';
+
 const { isObject, makeOptionsArray } = require('../src/helpers.js');
 
 test('isObject returns boolean', () => {
@@ -16,7 +18,7 @@ test('makeOptionsArray combines objects', () => {
     },
     {
       b: 'b',
-    }
+    },
   );
 
   expect( results ).toStrictEqual(
@@ -25,7 +27,7 @@ test('makeOptionsArray combines objects', () => {
         a: 'a',
         b: 'b',
       },
-    ]
+    ],
   );
 });
 
@@ -41,7 +43,7 @@ test('makeOptionsArray combines multiple objects', () => {
       {
         c: 'c',
       },
-    ]
+    ],
   );
 
   expect( results ).toStrictEqual(
@@ -54,7 +56,7 @@ test('makeOptionsArray combines multiple objects', () => {
         a: 'a',
         c: 'c',
       },
-    ]
+    ],
   );
 });
 

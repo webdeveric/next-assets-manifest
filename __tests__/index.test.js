@@ -1,3 +1,5 @@
+'use strict';
+
 const withAssetsManifest = require('../src/index.js');
 
 function getMockWebpackConfig()
@@ -30,7 +32,7 @@ test('assetsManifest option', () => {
   const webpackConfig = getMockWebpackConfig();
 
   [ true, false ].forEach(
-    isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) )
+    isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) ),
   );
 
   expect( webpackConfig.plugins ).toHaveLength(2);
@@ -47,7 +49,7 @@ test('assetsManifestClient/Server option - object', () => {
     const webpackConfig = getMockWebpackConfig();
 
     [ true, false ].forEach(
-      isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) )
+      isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) ),
     );
 
     expect( webpackConfig.plugins ).toHaveLength(1);
@@ -70,7 +72,7 @@ test('assetsManifestClient/Server option - array', () => {
     const webpackConfig = getMockWebpackConfig();
 
     [ true, false ].forEach(
-      isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) )
+      isServer => config.webpack( webpackConfig, getMockWebpackOptions( isServer ) ),
     );
 
     expect( webpackConfig.plugins ).toHaveLength(2);
