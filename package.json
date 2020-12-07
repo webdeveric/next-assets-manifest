@@ -40,7 +40,7 @@
     "node": ">=10.13.0"
   },
   "dependencies": {
-    "webpack-assets-manifest": ">=3.0.0"
+    "webpack-assets-manifest": "^4.0.0"
   },
   "devDependencies": {
     "@webdeveric/eslint-config": "^0.1.0",
