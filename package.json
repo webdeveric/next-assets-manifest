@@ -37,15 +37,19 @@
     "prepublishOnly": "npm run lint && npm test"
   },
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=12.0.0"
   },
   "dependencies": {
-    "webpack-assets-manifest": "^4.0.0"
+    "@webdeveric/utils": "^0.8.1",
+    "webpack-assets-manifest": "^5.0.0"
   },
   "devDependencies": {
-    "@webdeveric/eslint-config": "^0.1.0",
-    "eslint": "^7.14.0",
-    "eslint-plugin-jest": "^24.1.3",
-    "jest": "^26.6.3"
+    "@webdeveric/eslint-config": "^0.2.3",
+    "eslint": "^8.7.0",
+    "eslint-plugin-jest": "^25.7.0",
+    "jest": "^27.4.7"
+  },
+  "peerDependencies": {
+    "next": "^12.0.0"
   }
 }
