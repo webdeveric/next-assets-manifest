@@ -30,9 +30,12 @@ module.exports = function withAssetsManifest(nextConfig = {}) {
       const plugins = manifestOptions.map(
         opt => new WebpackAssetsManifest({
           ...opt,
-          // Pass this along so it can be used in customize/transform.
-          nextOptions: {
-            ...options,
+          extra: {
+            ...opt.extra,
+            // Pass this along so it can be used in customize/transform.
+            nextOptions: {
+              ...options,
+            },
           },
         }),
       );

@@ -1,23 +1,19 @@
 'use strict';
 
-function isObject(arg)
-{
-  return Object.prototype.toString.call(arg) === '[object Object]';
+const { asArray, getType } = require('@webdeveric/utils');
+
+function isObject(input) {
+  return getType(input) === 'Object';
 }
 
-function makeOptionsArray( commonOptions = {}, customOptions = [] )
-{
-  if ( commonOptions === customOptions ) {
+function makeOptionsArray(commonOptions = {}, customOptions = []) {
+  if (commonOptions === customOptions) {
     return [ commonOptions ];
   }
 
-  if ( ! Array.isArray( customOptions ) ) {
-    customOptions = [ customOptions ];
-  }
-
-  return customOptions
-    .filter( isObject )
-    .map( options => ({
+  return asArray(customOptions)
+    .filter(isObject)
+    .map(options => ({
       ...commonOptions,
       ...options,
     }));
