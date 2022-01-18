@@ -11,6 +11,11 @@ Add [webpack-assets-manifest](https://github.com/webdeveric/webpack-assets-manif
 npm install next-assets-manifest --save-dev
 ```
 
+## Requirements
+
+- [Next.js](https://nextjs.org/) 12
+- Node 12+
+
 ## Example Usage
 
 View [examples](./examples/).
@@ -28,7 +33,10 @@ module.exports = withAssetsManifest({
   // These options are used for both client and server manifest plugins.
   assetsManifest: {
     done(manifest) {
-      console.log( `${manifest}` );
+      console.log(`${manifest}`);
+
+      // You can get the options Next.js uses, if you need it for anything.
+      console.log(manifest.options.extra.nextOptions);
     },
   },
   // Customize the client side manifest.
