@@ -40,7 +40,7 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "@webdeveric/utils": "^0.9.0",
+    "@webdeveric/utils": "^0.10.0",
     "webpack-assets-manifest": "^5.1.0"
   },
   "devDependencies": {
