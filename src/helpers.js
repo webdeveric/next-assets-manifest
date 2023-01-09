@@ -1,10 +1,7 @@
 'use strict';
 
-const { asArray, getType } = require('@webdeveric/utils');
-
-function isObject(input) {
-  return getType(input) === 'Object';
-}
+const { asArray } = require('@webdeveric/utils');
+const { isObject } = require('@webdeveric/utils/type-predicate');
 
 function makeOptionsArray(commonOptions = {}, customOptions = []) {
   if (commonOptions === customOptions) {
@@ -20,6 +17,5 @@ function makeOptionsArray(commonOptions = {}, customOptions = []) {
 }
 
 module.exports = {
-  isObject,
   makeOptionsArray,
 };

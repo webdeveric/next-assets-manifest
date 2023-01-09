@@ -1,11 +1,6 @@
 'use strict';
 
-const { isObject, makeOptionsArray } = require('../src/helpers.js');
-
-test('isObject returns boolean', () => {
-  expect( isObject( {} ) ).toBe(true);
-  expect( isObject( 10 ) ).toBe(false);
-});
+const { makeOptionsArray } = require('../src/helpers.js');
 
 test('makeOptionsArray returns an array', () => {
   expect( makeOptionsArray() ).toStrictEqual( [] );
