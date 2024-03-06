@@ -1,6 +1,5 @@
 # Next Assets Manifest
 
-[![Build Status](https://travis-ci.org/webdeveric/next-assets-manifest.svg?branch=master)](https://travis-ci.org/webdeveric/next-assets-manifest)
 [![codecov](https://codecov.io/gh/webdeveric/next-assets-manifest/branch/master/graph/badge.svg)](https://codecov.io/gh/webdeveric/next-assets-manifest)
 [![dependencies Status](https://david-dm.org/webdeveric/next-assets-manifest/status.svg)](https://david-dm.org/webdeveric/next-assets-manifest)
 [![devDependencies Status](https://david-dm.org/webdeveric/next-assets-manifest/dev-status.svg)](https://david-dm.org/webdeveric/next-assets-manifest?type=dev)
